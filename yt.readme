@@ -1,0 +1,70 @@
+# Retrieval-Augmented Generation (RAG) using LangChain
+
+This project demonstrates how to build a RAG-based application using [LangChain](https://www.langchain.com/), FAISS, and OpenAI. The notebook showcases how to fetch transcripts from YouTube videos, split them into chunks, create vector embeddings, and perform semantic search to answer user queries using a language model.
+
+## 🚀 Features
+
+- ✅ YouTube transcript ingestion using `youtube-transcript-api`
+- ✅ Text chunking using LangChain's `RecursiveCharacterTextSplitter`
+- ✅ Embedding generation using OpenAI's `text-embedding-ada-002`
+- ✅ Vector database indexing with FAISS
+- ✅ Semantic search and query answering using `ChatOpenAI`
+- ✅ Simple RAG pipeline with prompt templating
+
+## 🛠️ Installation
+
+Run the following command to install required packages:
+
+```bash
+pip install -q youtube-transcript-api langchain-community langchain-openai \
+               faiss-cpu tiktoken python-dotenv
+📁 Project Structure
+rag_using_langchain.ipynb — Main notebook containing the RAG implementation
+
+.env — Store your OpenAI API key here securely
+
+README.md — Project documentation (this file)
+
+🧠 How It Works
+Document Ingestion: Fetches YouTube video transcripts using youtube-transcript-api.
+
+Text Splitting: Splits the transcripts into manageable chunks.
+
+Vector Indexing: Embeds the chunks and stores them in a FAISS index.
+
+Semantic Search + Generation: On user query, relevant chunks are retrieved and passed to OpenAI's chat model for answer generation.
+
+🔑 Environment Variables
+Create a .env file and add your OpenAI key:
+
+env
+Copy
+Edit
+OPENAI_API_KEY=your_openai_api_key
+📌 Usage
+Open the notebook rag_using_langchain.ipynb in Jupyter or Google Colab, and run through the cells step-by-step. Update the YouTube video ID as needed to try different sources.
+
+📚 References
+LangChain Docs
+
+OpenAI API
+
+FAISS
+
+YouTube Transcript API
+
+🧑‍💻 Author
+Chirag Kukreja
+
+vbnet
+Copy
+Edit
+
+Let me know if you'd like me to generate the `.env` template or provide a script version of the notebook! &#8203;:contentReference[oaicite:0]{index=0}&#8203;
+
+
+
+
+
+
+
